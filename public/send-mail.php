@@ -9,7 +9,7 @@ $year = $_POST['year'];
 $customer = $_POST['customer']; // required
 $comments = $_POST['comments']; // required
 
-$to = 'Wayne W. Hite <waynehite@yahoo.com>';
+$to = 'Hite <white@yahoo.com>';
 $subject = 'Service inquiry from ' . $name . '.';
 
 
@@ -38,7 +38,7 @@ $headers[] = 'Content-type: text/html; charset=iso-8859-1';
 
 // Additional headers
 // $headers[] = 'To: Wayne Hite <waynehite@yahoo.com>';
-$headers[] = 'From: Hite Autobody & Restoration Site Visitor <hiteauto@hiteautobodyandrestoration.com>';
+$headers[] = 'From: Hite Autobody & Restoration Site Visitor <hite@hiteautobodyandrestoration.com>';
 $headers[] = 'Reply-To: ' . $email;
    
 $result = mail($to, $subject, $message, implode("\r\n", $headers));
